@@ -17,7 +17,7 @@ ggplotly(gg_iris)
 
 wages <- read_csv("data/wages.csv")
 
-head(wages)
+# head(wages)
 pw <- ggplot(wages, aes(x=age, y=earn, color=sex))
 pw + geom_point(aes(size=ed), alpha=0.5) + 
     geom_smooth() +
